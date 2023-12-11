@@ -3,12 +3,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let postSchema = new Schema({
-    title :{
-        type : String,
-        required : true
+    flight_number :{
+        type : Number,
+        required : 'le contenu est requis'
     },
-    content :{
+    mission_name :{
         type : String,
+        required : 'le contenu est requis'
+    },
+    launch_year :{
+        type : Date,
         required : 'le contenu est requis'
     },
     created_at :{
