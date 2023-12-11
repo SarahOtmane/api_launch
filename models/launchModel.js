@@ -15,6 +15,10 @@ let launchSchema = new Schema({
         type : Date,
         required : 'le contenu est requis'
     },
+    details :{
+        type : String,
+        required : 'le contenu est requis'
+    },
     created_at :{
         type : Date,
         default : Date.now
