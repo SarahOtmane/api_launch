@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-let postSchema = new Schema({
+let launchSchema = new Schema({
     flight_number :{
         type : Number,
         required : 'le contenu est requis'
@@ -22,6 +22,6 @@ let postSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('Post', postSchema);
+module.exports = mongoose.model('Launch', launchSchema);
 
 
