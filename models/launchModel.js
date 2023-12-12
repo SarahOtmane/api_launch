@@ -11,12 +11,8 @@ let launchSchema = new Schema({
         type : String,
         required : 'le contenu est requis'
     },
-    launch_year :{
-        type : Date,
-        required : 'le contenu est requis'
-    },
-    details :{
-        type : String,
+    mission_id :{
+        type : Array,
         required : 'le contenu est requis'
     },
     created_at :{

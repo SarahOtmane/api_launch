@@ -9,9 +9,9 @@ mongoose.connect('mongodb://127.0.0.1:27017/apiLaunch');
 app.use(express.urlencoded());
 app.use(express.json())
 
-const postRoute = require('./routes/launchRoute.js');
+const launchRoute = require('./routes/launchRoute.js');
 //toutes les routes définies dans postRoute seront préfixées par /posts
-app.use('/', postRoute);
+app.use('/', launchRoute);
 
 //méthode d express pour lancer le serveur sur le port défini
 app.listen(port, () => {

@@ -6,6 +6,9 @@ const launchController = require('../controllers/launchController');
 
 router
     .route('/launches')
-    .get(launchController.listAllLanches)
+    .get(launchController.listAllLaunches)
+    .post(launchController.createALaunch)
+    
+    
 
 module.exports = router;
